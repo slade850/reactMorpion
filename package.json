@@ -4,14 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel ./src/index.html"
+    "dev": "parcel ./src/index.html",
+    "dev:ts": "parcel ./srcTs/index.html --dist-dir build/debug",
+    "dev:bit": "parcel ./srcWhitBit/index.html --dist-dir build/bitDeb",
+    "build:ts": "parcel build ./srcTs/index.html --dist-dir build/release --public-url ./",
+    "build:bit": "parcel build ./srcWhitBit/index.html --dist-dir build/bitRelease --public-url ./"
   },
   "author": "Julien.A.U Bardin",
   "license": "ISC",
   "dependencies": {
+    "@slade850/bitmorpion.app": "^0.0.1",
+    "@types/react": "^17.0.27",
+    "@types/react-dom": "^17.0.9",
     "parcel": "^2.0.0-rc.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "typescript": "^4.4.3"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0-rc.0"

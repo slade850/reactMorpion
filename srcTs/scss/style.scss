@@ -1,0 +1,51 @@
+body {
+  margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+#app {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  max-width: 1080px;
+  position: relative;
+}
+.playerModal {
+  z-index: 99;
+  position: absolute;
+  background-color: aliceblue;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  border-radius: 20px;
+  box-shadow: black 0px 0px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  .element {
+    margin: 5px;
+  }
+}
+.square {
+  font-size: 500%;
+  background-color: blanchedalmond;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 100%;
+  height: 100%;
+
+  .X {
+    background-color: rgb(163, 214, 248);
+  }
+  .O {
+    background-color: rgb(214, 163, 248);
+  }
+}
